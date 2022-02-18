@@ -26,14 +26,6 @@ module.exports = {
           ['/demo/title1', "标题1"],
           ['/demo/title2', "标题2"],
         ]
-      },
-      {
-        title: '测试标题',
-        collapsable: false,
-        sidebarDepth: 1,
-        children: [
-          ['/demo2/test', '测试标题1']
-        ]
       }
     ]
   },
