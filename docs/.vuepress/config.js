@@ -1,7 +1,10 @@
 // see https://vuepress.vuejs.org/zh/config/ 
 // to understand the config item and design your config files.
+const repo = 'vuepress-simple-template';
+
 module.exports = {
-  title: 'VuePress',
+  base: repo,
+  title: repo,
   description: 'Just playing around',
   themeConfig: {
     nav: [
