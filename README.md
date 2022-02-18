@@ -1,1 +1,1 @@
-# -vuepress-simple-template
+# vuepress-simple-template
