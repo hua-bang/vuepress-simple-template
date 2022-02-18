@@ -3,7 +3,7 @@
 const repo = 'vuepress-simple-template';
 
 module.exports = {
-  base: repo,
+  base: `/${repo}/`,
   title: repo,
   description: 'Just playing around',
   themeConfig: {
