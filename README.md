@@ -133,6 +133,8 @@ npm run docs:dev
 
 > Tip: 由于项目采用了`vue-router`，所以在打包过程中，我们需要去修改`docs/.vuepress/config.js`中`base`配置。由于本身做了相关配置，所以你只需要将`config.js`中`repo`改为你项目的名称即可。（更多配置请参考[base](https://vuepress.vuejs.org/zh/config/#base)）
 
+![repo_config](./image/repo_confg.png)
+
 ## Q & A
 该项目仅仅做为一个简易的模板，可能说明文档还不够详细，请见谅。同时，你可以通过[issues](https://github.com/hua-bang/vuepress-simple-template/issues)进行反馈。
 
