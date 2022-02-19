@@ -26,6 +26,9 @@
 
 ## 如何使用
 
+### 使用项目模板新建项目并克隆到本地
+进入[项目地址](https://github.com/hua-bang/vuepress-simple-template),点击`use this template`, 可以通过这个模板新建自己的项目，并`clone`到本地开发。
+
 ### 安装`Node`环境 
 
 去[Node官网](https://nodejs.org/zh-cn/)安装并配置好`环境变量`即可。（可参考[前端必会：安装node](https://juejin.cn/post/7009687795681722381)）
@@ -43,6 +46,9 @@ npm install
 ```shell
 npm run docs:dev
 ```
+启动之后，看到如下页面。
+
+![dev_demo](./image/dev_demo.png)
 
 ### 编译打包
 最终我们的文件是需要被vuepress编译打包的，实质上整个过程即`markdown` -> `html`的过程，一样，我们也通过`npm`就可以处理。
@@ -58,6 +64,8 @@ npm run docs:build
 你可以通过[VuePress配置](https://vuepress.vuejs.org/zh/config/#base)根据你个人喜好来修改配置。
 
 同时，关于`侧边栏`和`顶部导航栏`的配置，你也可以根据[导航栏](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E5%AF%BC%E8%88%AA%E6%A0%8F)和[侧边栏](https://vuepress.vuejs.org/zh/theme/default-theme-config.html#%E4%BE%A7%E8%BE%B9%E6%A0%8F)来进行配置。
+
+![nav_sidebar_config](./image/nav_sidebar_config.png)
 
 ### 如何新增/修改文档
 
@@ -113,6 +121,19 @@ npm run docs:dev
 
 ## 如何部署
 
-> TODO: use github hooks & github page to deploy the docs project
+> use github hooks & github page to deploy the docs project
+
+项目集成了`github actions`, 你可以通过`.github/workflows/vue-press.yml`查看对应的脚本。
+
+目前，当项目`master`分支`push`时候，会触发`github action`, 把产物打包并推送到`gh-pages`分支。
+
+此时，我们再去配置`Github Page`, 指定为`gh-pages`分支的根目录即可。
+
+![图片](./image/deploy.png)
+
+> Tip: 由于项目采用了`vue-router`，所以在打包过程中，我们需要去修改`docs/.vuepress/config.js`中`base`配置。由于本身做了相关配置，所以你只需要将`config.js`中`repo`改为你项目的名称即可。（更多配置请参考[base](https://vuepress.vuejs.org/zh/config/#base)）
+
+## Q & A
+该项目仅仅做为一个简易的模板，可能说明文档还不够详细，请见谅。同时，你可以通过[issues](https://github.com/hua-bang/vuepress-simple-template/issues)进行反馈。
 
 You can custom this project by the [docs](https://vuepress.vuejs.org/zh/). 
