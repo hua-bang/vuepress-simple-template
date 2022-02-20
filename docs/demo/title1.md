@@ -2,4 +2,4 @@
 
 ![image](./../assert/img/hero.png)
 
-![image](.\deploy.png)
+![image](./deploy.png)
